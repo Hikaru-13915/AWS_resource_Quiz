@@ -112,7 +112,7 @@ def rand_ints_nodup(a, b, k):
     return ns
 
 
-def image_print(image, wid=30):
+def image_print(image, wid=45):
     density = list("MWN$@%#&B89EGA6mK5HRkbYT43V0JL7gpaseyxznocv?jIftr1li*=-~^`':;,. ")
     LEN = len(density)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
