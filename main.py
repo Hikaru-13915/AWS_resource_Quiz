@@ -3,8 +3,8 @@ import os
 import cv2
 import numpy as np
 import json
-import time
 import random
+
 
 def main():
     print("OpenCV Version:", cv2.__version__)
@@ -64,42 +64,30 @@ def icon_game():
         questions_non = random.sample(json_data["services"], len(json_data["services"]))
     questions = questions_ab + questions_non
     for i in questions:
-        if i["icon"] == None:
+        if i["icon"] is None:
             questions.remove(i)
-
-    for i in questions:
-        print(i["icon"])
     length = len(questions)
     for num, i in enumerate(questions):
         print(" ")
         print("=================")
         print("question No." + str(num+1))
-        print(i["icon"])
+        print(" ")
         img = cv2.imread(i["icon"])
         image_print(img)
         options = rand_ints_nodup(0, length-2, 3)
         ans_idx = rand_ints_nodup(0, 3, 1)[0]
-        print("options")
-        print(options)
-        print("ans_idx")
-        print(ans_idx)
         for j, k in enumerate(options):
             if k >= num:
                 options[j] += 1
-        print("options")
-        print(options)
 
         print(" ")
         print("Options are.....")
         options = options[:ans_idx] + ["null"] + options[ans_idx:]
-        print("options")
-        print(options)
         for op_num in range(4):
-            print(str(op_num)+" :")
             if str(op_num) == str(ans_idx):
-                print(i["service_name"])
+                print(str(op_num) + " :" + i["service_name"])
             else:
-                print(questions[options[op_num]]["service_name"])
+                print(str(op_num) + " :" + questions[options[op_num]]["service_name"])
 
         guessed = input("Whose service icon is this? : ")
         if guessed == str(ans_idx):
