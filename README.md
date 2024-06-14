@@ -38,7 +38,7 @@ question No.1
 S3
 What does this abbreviation suggests? :  
 ```
-### Icon game
+### Icon game(ascii art)
 
 This game compose of several questions.
 At each question, some options for the answer, whose icon is shown in terminal, be given.
