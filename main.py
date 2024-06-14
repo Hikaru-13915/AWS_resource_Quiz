@@ -1,5 +1,4 @@
 from PIL import Image
-import os
 import cv2
 import numpy as np
 import json
@@ -108,7 +107,7 @@ def rand_ints_nodup(a, b, k):
     ns = []
     while len(ns) < k:
         n = random.randint(a, b)
-        if not n in ns:
+        if n not in ns:
             ns.append(n)
     return ns
 
@@ -124,6 +123,7 @@ def image_print(image, wid=30):
             s += density[(LEN-1)-resized[i][j]//(256//LEN)]
         print(s)
 
+
 def image_read(path):
 
     #画像の読み込み
@@ -134,12 +134,6 @@ def image_read(path):
 
     #画像をarrayに変換
     im_list = np.asarray(im)
-
-    #貼り付け
-    plt.imshow(im_list)
-
-    #表示
-    plt.show()
 
 
 if __name__ == "__main__":
