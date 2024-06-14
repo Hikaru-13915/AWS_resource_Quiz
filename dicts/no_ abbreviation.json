@@ -1,0 +1,16 @@
+{
+    "services": [
+        {
+            "service_name": "AWS shield",
+            "abbreviation": "Shield",
+            "icon": "images/Security-Identity-Compliance/Shield.png",
+            "description": "AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS. AWS Shield provides always-on detection and automatic inline mitigations that minimize application downtime and latency, so there is no need to engage AWS Support to benefit from DDoS protection."
+        },
+        {
+            "service_name": "AWS firewall manager",
+            "abbreviation": "Firewall Manager",
+            "icon": "images/Security-Identity-Compliance/Firewall-Manager.png",
+            "description": "AWS Firewall Manager is a security management service that makes it easier to centrally configure and manage AWS WAF rules across your accounts and applications. With Firewall Manager, you set up your firewall rules just once. The service automatically applies your rules across your accounts and resources, even as you add new resources."
+        }
+    ]
+}

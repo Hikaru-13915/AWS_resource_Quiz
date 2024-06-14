@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "service_name": "simple storage service",
+            "abbreviation": "S3",
+            "icon": "images/Storage/Simple-Storage-Service.png",
+            "description": "Amazon Simple Storage Service (Amazon S3) is an object storage service offering industry-leading scalability, data availability, security, and performance. Millions of customers of all sizes and industries store, manage, analyze, and protect any amount of data for virtually any use case, such as data lakes, cloud-native applications, and mobile apps. With cost-effective storage classes and easy-to-use management features, you can optimize costs, organize and analyze data, and configure fine-tuned access controls to meet specific business and compliance requirements."
+        },
+        {
+            "service_name": "key management service",
+            "abbreviation": "KMS",
+            "icon": null,
+            "description": "Key Management Service (KMS) is a managed service that makes it easy for you to create, control, and manage encryption keys used to encrypt your data. KMS is integrated with other AWS services making it simple to encrypt the data you store in these services and control access to the keys that encrypt it."
+        },
+        {
+            "service_name": "aws certificate manager",
+            "abbreviation": "ACM",
+            "icon": "images/Security-Identity-Compliance/Certificate-Manager.png",
+            "description": "AWS Certificate Manager (ACM) handles the complexity of creating, storing, and renewing public and private SSL/TLS X.509 certificates and keys that protect your websites and applications. You can use ACM to create an SSL/TLS certificate for your public-facing websites and applications that are hosted on AWS."
+        },
+        {
+            "service_name": "identity and access management",
+            "abbreviation": "IAM",
+            "icon": "images/Security-Identity-Compliance/Identity-and-Access-Management.png",
+            "description": "AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely. Using IAM, you can create and manage AWS users and groups, and use permissions to allow and deny their access to AWS resources."
+        },
+        {
+            "service_name": "web application firewall",
+            "abbreviation": "WAF",
+            "icon": "images/Security-Identity-Compliance/WAF.png",
+            "description": "AWS Web Application Firewall (WAF) is a web application firewall that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. WAF gives you control over which traffic to allow or block to your web applications by defining customizable web security rules."
+        }
+    ]
+}
