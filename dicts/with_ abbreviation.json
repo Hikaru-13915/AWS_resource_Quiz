@@ -29,6 +29,36 @@
             "abbreviation": "WAF",
             "icon": "images/Security-Identity-Compliance/WAF.png",
             "description": "AWS Web Application Firewall (WAF) is a web application firewall that helps protect your web applications from common web exploits that could affect application availability, compromise security, or consume excessive resources. WAF gives you control over which traffic to allow or block to your web applications by defining customizable web security rules."
+        },
+        {
+            "service_name": "data lifecycle manager",
+            "abbreviation": "DLM",
+            "icon": null,
+            "description": "AWS Data Lifecycle Manager (DLM) helps you automate the creation, retention, and deletion of snapshots taken to back up your Amazon EBS volumes. You can create lifecycle policies to automate the management of your snapshots by defining when to create snapshots and how long to retain them."
+        },
+        {
+            "service_name": "single sign on",
+            "abbreviation": "SSO",
+            "icon": null,
+            "description": "AWS Single Sign-On (AWS SSO) is now AWS IAM Identity Center. It is where you create, or connect, your workforce users once and centrally manage their access to multiple AWS accounts and applications. You can create user identities directly in IAM Identity Center, or you can connect your existing identity source, including Microsoft Active Directory and standards-based identity providers, such as Okta Universal Directory or Azure AD. You can choose to manage access just to AWS accounts, just to cloud applications, or to both. Your users can utilize their existing credentials for one-click access to their assigned AWS accounts, AWS applications, like Amazon SageMaker Studio, and other standards-based cloud applications, like Salesforce, Box, and Microsoft 365."
+        },
+        {
+            "service_name": "simple queue service",
+            "abbreviation": "SQS",
+            "icon": "images/App-Integration/Simple-Queue-Service.png",
+            "description": "Amazon Simple Queue Service (Amazon SQS) is a fully managed message queuing service that makes it easy to decouple and scale microservices, distributed systems, and serverless applications. Amazon SQS moves data between distributed application components and helps you decouple these components."
+        },
+        {
+            "service_name": "simple notification service",
+            "abbreviation": "SNS",
+            "icon": "images/App-Integration/Simple-Notification-Service.png",
+            "description": "Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application and application-to-person communication. The service can be used for sending notifications, alerts, or any other message to a large number of subscribers."
+        },
+        {
+            "service_name": "elastic block store",
+            "abbreviation": "EBS",
+            "icon": "images/Storage/Elastic-Block-Store.png",
+            "description": "Amazon Elastic Block Store (Amazon EBS) provides persistent block storage volumes for use with Amazon EC2 instances in the AWS Cloud. Each Amazon EBS volume is automatically replicated within its Availability Zone to protect you from component failure, offering high availability and durability."
         }
     ]
 }

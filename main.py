@@ -84,11 +84,12 @@ def icon_game():
         options = options[:ans_idx] + ["null"] + options[ans_idx:]
         for op_num in range(4):
             if str(op_num) == str(ans_idx):
-                print(str(op_num) + " :" + i["service_name"])
+                print(str(op_num+1) + " :" + i["service_name"])
             else:
-                print(str(op_num) + " :" + questions[options[op_num]]["service_name"])
+                print(str(op_num+1) + " :" + questions[options[op_num]]["service_name"])
 
         guessed = input("Whose service icon is this? : ")
+        guessed = str(int(guessed)-1)
         if guessed == str(ans_idx):
             print("Correct!")
             score += 1
